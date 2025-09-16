@@ -6,3 +6,5 @@ For this project I will only use elements found in the HTML essentials section.
 4) Tables
 5) Lists
 6) Forms and user Input
+
+Result: complete failure, forgot half the things that were taught
