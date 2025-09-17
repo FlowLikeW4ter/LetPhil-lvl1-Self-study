@@ -7,9 +7,13 @@
   </head>
   <style>
     footer {
-        color: grey;
+      color: grey;
     }
   </style>
+  <script>
+    let audio = document.getElementById("myaudio");
+  audio.volume = 0.2;
+  </script>
   <body>
     <header>
       <!-- Header -->
@@ -50,19 +54,30 @@
         referrerpolicy="strict-origin-when-cross-origin"
         allowfullscreen
       ></iframe>
-      <audio src="WhatsApp Video 2025-03-24 at 20.30.22.mp3">Goated song</audio>
+      <br />
+      <br />
+      <h2>Goated song</h2>
+      <audio id="myaudio" controls>
+        <source src="WhatsApp Video 2025-03-24 at 20.30.22.mp3">
+      </audio>
       <!-- welp the audio doesnt seem to work -->
     </section>
     <section>
-        <!-- links to other sites -->
-         <h4>More Links</h4>
-         <ul>
-            <!-- i seem to have forgotten how to make links open them selves in a new tab -->
-            <li><a href="https://www.artstation.com/akkumulator2000">My Art Portfolio</a></li>
-            <li><a href="https://x.com/bookreaderrr20">My twitter</a></li>
-            <!-- idk how to make a an email hyper link -->
-             <!-- nor am i going to attatch the phone number -->
-         </ul>
+      <!-- links to other sites -->
+      <h4>More Links</h4>
+      <ul>
+        <!-- i seem to have forgotten how to make links open them selves in a new tab -->
+        <li>
+          <a target="_blank" href="https://www.artstation.com/akkumulator2000"
+            >My Art Portfolio</a
+          >
+        </li>
+        <li><a target="_blank" href="https://x.com/bookreaderrr20">My twitter</a></li>
+        <!-- idk how to make a an email hyper link -->
+        <!-- nor am i going to attatch the phone number -->
+         <li><a href="dai@gmail.com">send me an email</a></li>
+         <li><a href="+12345656789">contact me</a></li>
+      </ul>
     </section>
     <footer>copyright 2025 my Blog</footer>
   </body>

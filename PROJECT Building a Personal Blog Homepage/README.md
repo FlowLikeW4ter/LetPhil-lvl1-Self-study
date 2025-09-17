@@ -6,3 +6,4 @@ Topics covered in this section:
 4) Adding Images, Audios and Videos
 
 my goal like last time is to look at the final prodcut and try ot recreate it on my own
+
