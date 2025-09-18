@@ -1,15 +1,12 @@
-.container {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: sans-serif;
-  line-height: 1.5;
-  -webkit-font-smoothing: antialiased; /* better text rendering on macOS */
-  -moz-osx-font-smoothing: grayscale; /* better text rendering on Firefox/macOS */
-    background-color: orange;
-    align-items: center;
+body{
     display: flex;
-    justify-content: center;
     height: 100vh;
+    justify-content: center;
+}
+
+.card {
+    border: solid 2px black;
+    width: 200px;
+    padding: 50px;
 }
  
