@@ -1,0 +1,18 @@
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+}
+
+.blog {
+    background-color: white;
+    width: 40%;
+    height: 80%;
+}
+
+.content {
+    text-align: bottom;
+}
+ /* idfk.... */
