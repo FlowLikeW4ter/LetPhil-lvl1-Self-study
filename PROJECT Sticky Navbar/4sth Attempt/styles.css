@@ -1,0 +1,19 @@
+body {
+    height: 200vh;
+    padding: 0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    position: sticky;
+    background-color: black;
+    color: white;
+    top: 0;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    margin: 15px;
+}
