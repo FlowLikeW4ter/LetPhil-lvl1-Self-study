@@ -1,0 +1,17 @@
+body {
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.hero {
+    /* background: fixed; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.hero h1 {
+    font-size: 100px;
+}
