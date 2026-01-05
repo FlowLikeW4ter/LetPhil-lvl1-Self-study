@@ -17,19 +17,16 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     item.addEventListener("mouseenter", () => {
-      
       header.style.opacity = "0";
-
       setTimeout(() => {
-      header.textContent = item.dataset.text || "";
-      header.style.opacity = "1";
+        header.textContent = item.dataset.text || "";
+        header.style.opacity = "1";
       }, 180);
 
       if (video) {
-        clearInterval(fadeOutInterval);   // stop fade-out if active
+        clearInterval(fadeOutInterval);
         video.play();
 
-        // Only unmute on first hover
         if (firstHover) {
           video.muted = false;
           firstHover = false;
@@ -56,7 +53,6 @@ document.addEventListener("DOMContentLoaded", () => {
             video.volume = Math.max(video.volume - FADE_STEP, 0);
           } else {
             clearInterval(fadeOutInterval);
-            
           }
         }, INTERVAL);
       }
