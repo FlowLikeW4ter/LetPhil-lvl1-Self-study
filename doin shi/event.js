@@ -2,23 +2,28 @@ document.addEventListener("DOMContentLoaded", () => {
   const header = document.getElementById("main-header");
   const items = document.querySelectorAll(".item");
 
-  const FADE_STEP = 0.05;      // how much volume changes per frame
-  const INTERVAL = 50;          // milliseconds between volume changes
-  const MAX_VOLUME = 0.5;       // cap volume at 50%
+  const FADE_STEP = 0.01;      
+  const INTERVAL = 40;          
+  const MAX_VOLUME = 0.3;       
 
   items.forEach(item => {
     const video = item.querySelector("video");
     let fadeInInterval, fadeOutInterval;
-    let firstHover = true;      // track first hover for unmuting
+    let firstHover = true;     
 
     if (video) {
-      video.muted = true;       // start muted
-      video.volume = 0;         // start at 0
+      video.muted = true;       
+      video.volume = 0;         
     }
 
     item.addEventListener("mouseenter", () => {
+      
+      header.style.opacity = "0";
+
+      setTimeout(() => {
       header.textContent = item.dataset.text || "";
       header.style.opacity = "1";
+      }, 180);
 
       if (video) {
         clearInterval(fadeOutInterval);   // stop fade-out if active
@@ -44,14 +49,14 @@ document.addEventListener("DOMContentLoaded", () => {
       header.style.opacity = "0";
 
       if (video) {
-        clearInterval(fadeInInterval);  // stop fade-in if active
+        clearInterval(fadeInInterval);  
 
         fadeOutInterval = setInterval(() => {
           if (video.volume > 0) {
             video.volume = Math.max(video.volume - FADE_STEP, 0);
           } else {
             clearInterval(fadeOutInterval);
-            // DO NOT mute here, so subsequent hovers can fade in sound
+            
           }
         }, INTERVAL);
       }
